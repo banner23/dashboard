@@ -1,0 +1,2370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="anaFrame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(6, 6, 58);
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="yagFrame">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>620</y>
+         <width>270</width>
+         <height>270</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="yagGradient">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>240</width>
+          <height>240</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 120px;
+background-color: qlineargradient(spread:pad, x1:0.999873, y1:0.239, x2:0, y2:0.086, stop:0 rgba(104, 1, 174, 255), stop:1 rgba(200, 107, 92, 255));
+background-color: qlineargradient(spread:pad, x1:0.761, y1:0.494591, x2:0.024, y2:0.261, stop:0 rgba(215, 88, 52, 255), stop:0.709742 rgba(249, 162, 72, 255));</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="kapak1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>130</y>
+          <width>260</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="yagFrameIc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>220</width>
+          <height>220</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);
+border-radius: 110px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="yagFrameOn">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(3, 2, 34);
+border-radius:70px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="yag">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>40</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #ffffff; background-color: none</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;font-family: Arial Black&quot;&gt;OIL/PSI&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="yagIcon">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>25</y>
+           <width>40</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>tba.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="yagProgress">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.801158 rgba(85, 170, 255, 0), stop:0.803089 rgba(249, 201, 111, 255));
+border-radius: 100px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="yagGolge">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>180</width>
+           <height>180</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 90px;
+background-color: rgba(0, 0, 0,150);
+border-width: 2px;
+border-style: solid;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="labelY0">
+        <property name="geometry">
+         <rect>
+          <x>-3</x>
+          <y>80</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelY2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelY4">
+        <property name="geometry">
+         <rect>
+          <x>115</x>
+          <y>-1</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelY6">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>20</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelY8">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>80</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;8&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>yagGradient</zorder>
+       <zorder>yagFrameIc</zorder>
+       <zorder>yagProgress</zorder>
+       <zorder>yagFrameOn</zorder>
+       <zorder>kapak1</zorder>
+       <zorder>labelY0</zorder>
+       <zorder>labelY2</zorder>
+       <zorder>labelY4</zorder>
+       <zorder>labelY6</zorder>
+       <zorder>labelY8</zorder>
+      </widget>
+      <widget class="QFrame" name="hararetFrame">
+       <property name="geometry">
+        <rect>
+         <x>326</x>
+         <y>620</y>
+         <width>270</width>
+         <height>270</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="hararetGradient">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>240</width>
+          <height>240</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0.488, y1:0, x2:0.505, y2:0.688, stop:0 rgba(104, 1, 174, 255), stop:1 rgba(200, 107, 92, 255));
+background-color: qlineargradient(spread:pad, x1:0.761, y1:0.494591, x2:0.024, y2:0.261, stop:0 rgba(215, 88, 52, 255), stop:0.709742 rgba(249, 162, 72, 255));
+border-radius: 120px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="kapak2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>130</y>
+          <width>260</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="hararetFrameIc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>220</width>
+          <height>220</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);
+border-radius: 110px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="hararetFrameOn">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(3, 2, 34);
+border-radius:70px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="hararet">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>40</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #ffffff; background-color: none</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial Black'; font-size:12pt;&quot;&gt;TEMP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="hararetIcon">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>25</y>
+           <width>40</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>tba2.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="hararetProgress">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.011158 rgba(85, 170, 255, 0), stop:0.013089 rgba(249, 201, 111, 255));
+border-radius: 100px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="hararetGolge">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>180</width>
+           <height>180</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 90px;
+background-color: rgba(0, 0, 0,150);
+border-width: 2px;
+border-style: solid;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="labelH6">
+        <property name="geometry">
+         <rect>
+          <x>203</x>
+          <y>21</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelH2">
+        <property name="geometry">
+         <rect>
+          <x>33</x>
+          <y>21</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelH0">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>81</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelH8">
+        <property name="geometry">
+         <rect>
+          <x>243</x>
+          <y>81</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;8&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelH4">
+        <property name="geometry">
+         <rect>
+          <x>118</x>
+          <y>0</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>hararetGradient</zorder>
+       <zorder>hararetFrameIc</zorder>
+       <zorder>hararetProgress</zorder>
+       <zorder>hararetFrameOn</zorder>
+       <zorder>kapak2</zorder>
+       <zorder>labelH6</zorder>
+       <zorder>labelH2</zorder>
+       <zorder>labelH0</zorder>
+       <zorder>labelH8</zorder>
+       <zorder>labelH4</zorder>
+      </widget>
+      <widget class="QFrame" name="yakitFrame">
+       <property name="geometry">
+        <rect>
+         <x>612</x>
+         <y>620</y>
+         <width>270</width>
+         <height>270</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="yakitGradient">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>240</width>
+          <height>240</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.946, y2:0.720818, stop:0 rgba(85, 255, 255, 255), stop:1 rgba(0, 85, 255, 255));
+border-radius: 120px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="kapak3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>130</y>
+          <width>260</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="yakitFrameIc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>220</width>
+          <height>220</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);
+border-radius: 110px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="yakitFrameOn">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(3, 2, 34);
+border-radius:70px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="yakit">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>40</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #ffffff; background-color: none</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial Black'; font-size:12pt;&quot;&gt;FUEL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="yakitIcon">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>25</y>
+           <width>45</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>tba3.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="yakitProgress">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.011158 rgba(85, 170, 255, 0), stop:0.013089 rgba(249, 201, 111, 255));
+background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.799308 rgba(85, 170, 255, 0), stop:0.803089 rgba(85, 170, 255, 255));
+border-radius: 100px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="yakitGolge">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>180</width>
+           <height>180</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 90px;
+background-color: rgba(0, 0, 0,150);
+border-width: 2px;
+border-style: solid;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="labelYT4">
+        <property name="geometry">
+         <rect>
+          <x>118</x>
+          <y>0</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelYT2">
+        <property name="geometry">
+         <rect>
+          <x>33</x>
+          <y>21</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelYT6">
+        <property name="geometry">
+         <rect>
+          <x>203</x>
+          <y>21</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelYT0">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>81</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelYT8">
+        <property name="geometry">
+         <rect>
+          <x>243</x>
+          <y>81</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;8&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>yakitGradient</zorder>
+       <zorder>yakitFrameIc</zorder>
+       <zorder>yakitProgress</zorder>
+       <zorder>yakitFrameOn</zorder>
+       <zorder>kapak3</zorder>
+       <zorder>labelYT4</zorder>
+       <zorder>labelYT2</zorder>
+       <zorder>labelYT6</zorder>
+       <zorder>labelYT0</zorder>
+       <zorder>labelYT8</zorder>
+      </widget>
+      <widget class="QFrame" name="akuFrame">
+       <property name="geometry">
+        <rect>
+         <x>899</x>
+         <y>620</y>
+         <width>270</width>
+         <height>270</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="akuGradient">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>240</width>
+          <height>240</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 120px;
+background-color: qlineargradient(spread:pad, x1:0.999873, y1:0.239, x2:0, y2:0.086, stop:0 rgba(104, 1, 174, 255), stop:1 rgba(200, 107, 92, 255));
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.946, y2:0.720818, stop:0 rgba(85, 255, 255, 255), stop:1 rgba(0, 85, 255, 255));</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="kapak4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>130</y>
+          <width>260</width>
+          <height>130</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="akuFrameIc">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>220</width>
+          <height>220</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);
+border-radius: 110px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="akuFrameOn">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>140</width>
+          <height>140</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(3, 2, 34);
+border-radius:70px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="aku">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>40</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #ffffff; background-color: none</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial Black'; font-size:12pt;&quot;&gt;VOLTS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="akuIcon">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>25</y>
+           <width>40</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>tba1.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="akuProgress">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.011158 rgba(85, 170, 255, 0), stop:0.013089 rgba(249, 201, 111, 255));
+background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.799308 rgba(85, 170, 255, 0), stop:0.803089 rgba(85, 170, 255, 255));
+border-radius: 100px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="akuGolge">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>180</width>
+           <height>180</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 90px;
+background-color: rgba(0, 0, 0,150);
+border-width: 2px;
+border-style: solid;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="labelA4">
+        <property name="geometry">
+         <rect>
+          <x>118</x>
+          <y>0</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelA2">
+        <property name="geometry">
+         <rect>
+          <x>33</x>
+          <y>21</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelA6">
+        <property name="geometry">
+         <rect>
+          <x>203</x>
+          <y>21</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelA0">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>81</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelA8">
+        <property name="geometry">
+         <rect>
+          <x>243</x>
+          <y>81</y>
+          <width>20</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-family: Arial Black&quot;&gt;8&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>akuGradient</zorder>
+       <zorder>akuFrameIc</zorder>
+       <zorder>akuProgress</zorder>
+       <zorder>akuFrameOn</zorder>
+       <zorder>kapak4</zorder>
+       <zorder>labelA4</zorder>
+       <zorder>labelA2</zorder>
+       <zorder>labelA6</zorder>
+       <zorder>labelA0</zorder>
+       <zorder>labelA8</zorder>
+      </widget>
+      <widget class="QLabel" name="resimAku">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>30</y>
+         <width>80</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>aku-icon.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="resimYag">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>30</y>
+         <width>80</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>yağicon kopya.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="resimFren">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>30</y>
+         <width>80</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>BBB1.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="resimEmniyet">
+       <property name="geometry">
+        <rect>
+         <x>780</x>
+         <y>30</y>
+         <width>85</width>
+         <height>55</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>AAAA kopya.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="resimHararet">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>30</y>
+         <width>80</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>hararet3.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="resimYakit">
+       <property name="geometry">
+        <rect>
+         <x>930</x>
+         <y>30</y>
+         <width>80</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>benzinson2 kopya.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="resimSol">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>70</y>
+         <width>90</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>solok3.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="resimSag">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>70</y>
+         <width>90</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>sagok3.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>260</y>
+         <width>21</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="verticalSlider_2">
+       <property name="geometry">
+        <rect>
+         <x>1150</x>
+         <y>270</y>
+         <width>21</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QFrame" name="rpmFrame">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>500</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>32</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;font-family:Arial Black&quot;&gt;10&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label30">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>230</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;font-family:Arial Black&quot;&gt;30&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label20">
+        <property name="geometry">
+         <rect>
+          <x>235</x>
+          <y>10</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;font-family:Arial Black&quot;&gt;20&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QFrame" name="rpmGradient">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>400</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 200px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.977273, stop:0.191111 rgba(107, 180, 212, 255), stop:0.762222 rgba(86, 55, 135, 255));</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label0">
+        <property name="geometry">
+         <rect>
+          <x>133</x>
+          <y>425</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color:#00000000;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;font-family:Arial Black&quot;&gt;0&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label5">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>360</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color:#00000000;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;font-family:Arial Black&quot;&gt;5&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label40">
+        <property name="geometry">
+         <rect>
+          <x>333</x>
+          <y>425</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color:#00000000;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;font-family:Arial Black;&quot;&gt;40&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label35">
+        <property name="geometry">
+         <rect>
+          <x>415</x>
+          <y>360</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color:#00000000;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;font-family:Arial Black;&quot;&gt;35&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QFrame" name="rpmFrame1">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>60</y>
+          <width>380</width>
+          <height>380</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(3, 2, 34);
+border-radius: 190px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="rpmFrame2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>80</y>
+          <width>340</width>
+          <height>340</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(7, 7, 61);
+border-radius: 170px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="rpmFrame3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>110</y>
+          <width>280</width>
+          <height>280</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+border-radius: 140px;
+background-color: rgb(255, 255, 255);
+background-color: rgb(3, 2, 34);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="rpmFrame4">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>150</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);
+border-radius:100px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="rpm">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>30</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #ffffff</string>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="sabitRpm">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>100</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #ffffff</string>
+         </property>
+         <property name="text">
+          <string>Rpm</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="rpmProgress">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>110</y>
+          <width>280</width>
+          <height>280</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:242.2, stop:0.998 rgba(0, 0, 0, 0), stop:0.9999 rgba(64, 249, 243, 255));
+border-radius: 140px;
+
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="rpmGolge">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>260</width>
+           <height>260</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 130px;
+background-color: rgba(0, 0, 0,150);
+border-width: 2px;
+border-style: solid;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label15">
+        <property name="geometry">
+         <rect>
+          <x>75</x>
+          <y>75</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;font-family:Arial Black&quot;&gt;15&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label25">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>75</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;font-family:Arial Black&quot;&gt;25&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>rpmGradient</zorder>
+       <zorder>rpmFrame1</zorder>
+       <zorder>rpmFrame2</zorder>
+       <zorder>rpmFrame3</zorder>
+       <zorder>label0</zorder>
+       <zorder>label10</zorder>
+       <zorder>label15</zorder>
+       <zorder>label25</zorder>
+       <zorder>label20</zorder>
+       <zorder>label30</zorder>
+       <zorder>label35</zorder>
+       <zorder>label40</zorder>
+       <zorder>label5</zorder>
+       <zorder>rpmProgress</zorder>
+       <zorder>rpmFrame4</zorder>
+      </widget>
+      <widget class="QFrame" name="hizFrame">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>110</y>
+         <width>500</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="labelYuz">
+        <property name="geometry">
+         <rect>
+          <x>455</x>
+          <y>260</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;font-family:Arial Black&quot;&gt;100&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelAltmis">
+        <property name="geometry">
+         <rect>
+          <x>235</x>
+          <y>10</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;font-family:Arial Black&quot;&gt;60&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QFrame" name="hizGradient">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>400</width>
+          <height>400</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 200px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.977273, stop:0.191111 rgba(107, 180, 212, 255), stop:0.762222 rgba(86, 55, 135, 255));</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelSifir">
+        <property name="geometry">
+         <rect>
+          <x>133</x>
+          <y>425</y>
+          <width>30</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color:#00000000;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;font-family:Arial Black&quot;&gt;0&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelYirmi">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>280</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color:#00000000;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;font-family:Arial Black&quot;&gt;20&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelYuzyirmi">
+        <property name="geometry">
+         <rect>
+          <x>333</x>
+          <y>425</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color:#00000000;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;font-family:Arial Black&quot;&gt;120&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QFrame" name="hizFrame1">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>60</y>
+          <width>380</width>
+          <height>380</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(3, 2, 34);
+border-radius: 190px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="hizFrame2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>80</y>
+          <width>340</width>
+          <height>340</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(7, 7, 61);
+border-radius: 170px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="hizFrame3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>110</y>
+          <width>280</width>
+          <height>280</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+border-radius: 140px;
+background-color: rgb(255, 255, 255);
+background-color: rgb(3, 2, 34);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="hizFrame4">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>150</y>
+          <width>200</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(6, 6, 58);
+border-radius:100px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="kmh">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>30</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #ffffff</string>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="sabitKmh">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>100</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: #ffffff</string>
+         </property>
+         <property name="text">
+          <string>Km/h</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="hizProgress">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>110</y>
+          <width>280</width>
+          <height>280</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 140px;
+background-color: qconicalgradient(cx:0.5, cy:0.5, angle:242.2, stop:0.998 rgba(96, 85, 255, 0), stop:0.999 rgba(85, 255, 255, 255));
+
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="hizGolge">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>260</width>
+           <height>260</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0, 0, 0,150);
+border-style:solid;
+border-color: rgb(0,0,0);
+border-width: 2px;
+border-radius: 130px;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="labelKirk">
+        <property name="geometry">
+         <rect>
+          <x>55</x>
+          <y>95</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;font-family:Arial Black&quot;&gt;40&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelSeksen">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>85</y>
+          <width>40</width>
+          <height>40</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>47</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>&lt;p&gt;&lt;span style=&quot; font-size:15pt; font-weight:600;font-family:Arial Black&quot;&gt;80&lt;/span&gt;&lt;/p&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>hizGradient</zorder>
+       <zorder>labelYuz</zorder>
+       <zorder>labelAltmis</zorder>
+       <zorder>labelSifir</zorder>
+       <zorder>labelYuzyirmi</zorder>
+       <zorder>hizFrame1</zorder>
+       <zorder>hizFrame2</zorder>
+       <zorder>hizFrame3</zorder>
+       <zorder>labelKirk</zorder>
+       <zorder>labelSeksen</zorder>
+       <zorder>labelYirmi</zorder>
+       <zorder>hizProgress</zorder>
+       <zorder>hizFrame4</zorder>
+      </widget>
+      <widget class="QSlider" name="verticalSliderYarim">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>510</y>
+         <width>20</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
