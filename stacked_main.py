@@ -9,7 +9,6 @@ from PySide2.QtWidgets import *
 
 from ui_stack_dashboard import Ui_MainWindow
 
-import wmi
 
 
 class MainWindow(QMainWindow):
@@ -17,6 +16,7 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
 
         self.ui.verticalSlider_5.valueChanged.connect(self._trigger_refresh)
         self.ui.verticalSlider_6.valueChanged.connect(self.hiz_refresh)
@@ -906,7 +906,7 @@ class MainWindow(QMainWindow):
         labelCizgiY8.setPixmap(xformed_pixmapCizgiY8)
     #YAG GOSTERGE END
 
-        self.show()
+        self.showMaximized()
 
     def yanal_egim_sol(self):
         value = self.ui.sliderSolUst.value()
