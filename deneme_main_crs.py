@@ -404,11 +404,13 @@ if __name__ == "__main__":
     def read_byte(self):
      return bus.read_byte_data(address, self)
 
+
     def read_word(self):
         high = bus.read_byte_data(address, self)
         low = bus.read_byte_data(address, self+1)
         val = (high << 8) + low
         return val
+
 
     def read_word_2c(self):
         val = read_word(self)
@@ -417,16 +419,20 @@ if __name__ == "__main__":
         else:
             return val
 
+
     def dist(self, b):
         return math.sqrt((self*self)+(b*b))
+
 
     def get_y_rotation(self, y, z):
         radians = math.atan2(self, dist(y, z))
         return -math.degrees(radians)
 
+
     def get_x_rotation(self, y, z):
         radians = math.atan2(y, dist(self, z))
         return math.degrees(radians)
+
 
     bus = smbus.SMBus(1)
     address = 0x68  # MPU6050 I2C adresi
@@ -438,9 +444,9 @@ if __name__ == "__main__":
     gyro_yout = read_word_2c(0x45)
     gyro_zout = read_word_2c(0x47)
 
-    print("Jiroskop X : ", gyro_xout, " olcekli: ", (gyro_xout / 131))
-    print("Jiroskop Y : ", gyro_yout, " olcekli: ", (gyro_yout / 131))
-    print("Jiroskop Z: ", gyro_zout, " olcekli: ", (gyro_zout / 131))
+    print ("Jiroskop X : ", gyro_xout, " olcekli: ", (gyro_xout / 131))
+    print ("Jiroskop Y : ", gyro_yout, " olcekli: ", (gyro_yout / 131))
+    print ("Jiroskop Z: ", gyro_zout, " olcekli: ", (gyro_zout / 131))
 
     #Ivmeolcer register'larini oku
     accel_xout = read_word_2c(0x3b)
@@ -451,15 +457,15 @@ if __name__ == "__main__":
     accel_yout_scaled = accel_yout / 16384.0
     accel_zout_scaled = accel_zout / 16384.0
 
-    print("Ivmeolcer X: ", accel_xout, " olcekli: ", accel_xout_scaled)
-    print("Ivmeolcer Y: ", accel_yout, " olcekli: ", accel_yout_scaled)
-    print("Ivmeolcer Z: ", accel_zout, " olcekli: ", accel_zout_scaled)
+    print ("Ivmeolcer X: ", accel_xout, " olcekli: ", accel_xout_scaled)
+    print ("Ivmeolcer Y: ", accel_yout, " olcekli: ", accel_yout_scaled)
+    print ("Ivmeolcer Z: ", accel_zout, " olcekli: ", accel_zout_scaled)
 
-    print("X dondurme: ", get_x_rotation(
-        accel_xout_scaled, accel_yout_scaled, accel_zout_scaled))
-    print("Y dondurme: ", get_y_rotation(
-        accel_xout_scaled, accel_yout_scaled, accel_zout_scaled))
+    print ("X dondurme: ", get_x_rotation(accel_xout_scaled, accel_yout_scaled, accel_zout_scaled))
+    print ("Y dondurme: ", get_y_rotation(accel_xout_scaled, accel_yout_scaled, accel_zout_scaled))
 
+    self.ui.dikey_egim_deger.setText = get_x_rotation(
+        accel_xout_scaled, accel_yout_scaled, accel_zout_scaled)
 
     app = QApplication(sys.argv)
     window = MainWindow()
